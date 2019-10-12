@@ -1,0 +1,50 @@
+{
+  "name": "travel-agents",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Travel-Agents",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.6.x",
+    "browser-sync": "2.26.x",
+    "del": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^4.12.0",
+    "posthtml-include": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.23.0",
+    "stylelint": "11.0.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint 'scss/**/*.scss' --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "scss/**/*.scss"
+  ]
+}

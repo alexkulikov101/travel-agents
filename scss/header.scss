@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  border: solid 0.5px #8ca0bf;
+}
+
+@media (max-width: 680px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    flex-direction: row;
+  }
+}

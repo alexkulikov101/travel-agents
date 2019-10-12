@@ -1,0 +1,188 @@
+.nav {
+  width: 1100px;
+  height: 89px;
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    color: $dark-grey-blue;
+    font-family: "LibreFranklin Semibold";
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__inner {
+    ul {
+      width: 622px;
+      height: 89px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-right: solid 0.5px #8ca0bf;
+      margin: 0;
+      padding: 0;
+      li {
+        width: 90px;
+        margin-left: 5px;
+      }
+    }
+  }
+  &__item-btn-phone {
+    width: 89px;
+    height: 89px;
+    cursor: pointer;
+    background-image: url("../img/call-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__btn-phone-link {
+    width: 89px;
+    height: 89px;
+  }
+  &__item-btn-account {
+    width: 89px;
+    height: 89px;
+    border-left: solid 0.5px #8ca0bf;
+    cursor: pointer;
+    background-image: url("../img/account.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__btn-account-link {
+    width: 89px;
+    height: 89px;
+  }
+  &__item-btn-cart {
+    width: 87px;
+    height: 89px;
+    background-color: #0d3a7f;
+    cursor: pointer;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__btn-cart-link {
+    width: 87px;
+    height: 89px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .nav {
+    &__inner {
+      width: 100%;
+      ul {
+        width: 100%;
+      }
+
+      & > li {
+        margin: 0px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .nav {
+    &__link {
+      font-size: 11px;
+    }
+    &__inner {
+      ul {
+        li {
+          width: auto;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .nav {
+    &__item-btn-phone {
+      width: 50px;
+    }
+    &__btn-phone-link {
+      width: 50px;
+    }
+    &__item-btn-account {
+      width: 50px;
+    }
+    &__btn-account-link {
+      width: 50px;
+    }
+    &__item-btn-cart {
+      width: 50px;
+    }
+    &__btn-cart-link {
+      width: 50px;
+    }
+    &__link {
+      font-size: 8px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .nav {
+    width: 58px;
+    height: 60px;
+    &__inner {
+      ul {
+        display: none;
+        height: 60px;
+      }
+    }
+    &__item:not(:last-child) {
+      display: none;
+    }
+    &__item-btn-cart {
+      position: relative;
+      width: 58px;
+      height: 60px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 25%;
+        left: 62%;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $aqua-marine;
+      }
+    }
+    &__btn-cart-link {
+      width: 58px;
+      height: 60px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.main {
+  position: relative;
+  display: flex;
+}
+
+@media (max-width: 375px) {
+  .main {
+    min-height: 584px;
+  }
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "libreFranklin Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/Librefranklin.woff2") format("woff2"),
+    url("../fonts/Librefranklin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "libreFranklin Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Librefranklinlight.woff2") format("woff2"),
+    url("../fonts/Librefranklinlight.woff") format("woff");
+}
+@font-face {
+  font-family: "libreFranklin Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Librefranklinsemibold.woff2") format("woff2"),
+    url("../fonts/Librefranklinsemibold.woff") format("woff");
+}
+@font-face {
+  font-family: "libreFranklin Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Librefranklinmedium.woff2") format("woff2"),
+    url("../fonts/Librefranklinmedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/MuseoSansCyrl-900.woff") format("woff");
+}

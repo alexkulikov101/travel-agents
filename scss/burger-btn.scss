@@ -1,0 +1,38 @@
+.burger-btn {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background-color: #ebf3ff;
+  border: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-right: solid 0.5px #8ca0bf;
+  border-bottom: solid 0.5px #8ca0bf;
+  cursor: pointer;
+  &__line {
+    position: absolute;
+    left: 38%;
+    width: 20px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #0d3a7f;
+    &--1 {
+      top: 41%;
+    }
+    &--2 {
+      top: 51%;
+    }
+    &--3 {
+      top: 61%;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .burger-btn {
+    display: block;
+  }
+}

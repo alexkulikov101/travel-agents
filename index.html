@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Travel Agents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <button class="header__burger-btn burger-btn">
+          <span class="visually-hidden">Menu</span>
+          <span class="burger-btn__line burger-btn__line--1"></span>
+          <span class="burger-btn__line burger-btn__line--2"></span>
+          <span class="burger-btn__line burger-btn__line--3"></span>
+        </button>
+
+        <div class="header__logo logo">
+          <div class="logo__inner">
+            <picture>
+              <source
+                media="(max-width: 375px)"
+                srcset="img/logo-agents-navy-reg-m.png, img/logo-agents-navy-reg-m@2x.png, img/logo-agents-navy-reg-m@3x.png"
+              />
+              <img
+                class="logo__img"
+                width="129"
+                src="img/logo-agents-navy-reg-d.png"
+                srcset="img/logo-agents-navy-reg-d@2x.png, img/logo-agents-navy-reg-d@3x.png"
+                alt="logo-agents-navy"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="header__nav nav">
+          <nav class="nav__wrap">
+            <ul class="nav__list">
+              <li class="nav__inner">
+                <ul>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Destinations</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Style of Travel</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">About Us</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item nav__item-btn-phone">
+                <a class="nav__btn-phone-link" href="#">
+                  <span class="visually-hidden ">Call</span>
+                </a>
+              </li>
+              <li class="nav__item nav__item-btn-account">
+                <a class="nav__btn-account-link" href="#"
+                  ><span class="visually-hidden ">Account</span>
+                </a>
+              </li>
+              <li class="nav__item nav__item-btn-cart">
+                <a class="nav__btn-cart-link" href="#">
+                  <span class="visually-hidden ">Cart</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="heading">
+          <div class="heading__inner">
+            <h1 class="heading__title">
+              Travel <span class="heading__title-word">Agents</span> Portal
+            </h1>
+            <p class="heading__desc">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry
+            </p>
+            <button class="heading__btn">Create an Account</button>
+            <p class="heading__question">
+              Have an Account Already?<a href="#" class="heading__login-now">
+                <span class="heading__login-now ">Login Now</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="slider">
+          <div class="slider__inner">
+            <span class="slider__title">DESTINATIONS</span>
+            <b class="slider__caption">north america</b>
+          </div>
+        </div>
+        <form class="form" action="#">
+          <input
+            class="form__input-where"
+            id="where"
+            type="text"
+            placeholder="Italy, China, etc."
+          />
+          <label class="form__label-where" for="where">
+            Where do you want to go?</label
+          >
+          <input class="form__input-when" id="when" type="text" />
+          <label class="form__label-when" for="when"> When</label>
+          <input class="form__input-duration" id="duration" type="text" />
+          <label class="form__label-duration" for="duration">Duration</label>
+
+          <button class="form__btn">
+            <span class="visually-hidden">Button Submit</span>
+            <span class="form__btn-arrow"></span>
+          </button>
+        </form>
+      </main>
+    </div>
+    <script src="js/script.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+  </body>
+</html>

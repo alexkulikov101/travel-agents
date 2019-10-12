@@ -1,0 +1,290 @@
+.form {
+  position: relative;
+  position: absolute;
+  display: flex;
+  width: 1112px;
+  height: 88px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -556px;
+  box-shadow: 0 6px 21px 0 rgba(140, 160, 191, 0.24);
+  background-color: $white;
+  &__input-where {
+    position: relative;
+    width: 600px;
+    height: 88px;
+    border: none;
+    border-right: solid 0.3px #8ca0bf;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  &__label-where {
+    position: relative;
+    width: 599px;
+    height: 88px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: "libreFranklin Medium";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 0.47px;
+    padding-left: 52px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 26px;
+      width: 15px;
+      height: 25px;
+      background-image: url("../img/004-pin.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__input-when {
+    position: relative;
+    width: 210px;
+    height: 88px;
+    border: none;
+    border-right: solid 0.3px #8ca0bf;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  &__label-when {
+    position: relative;
+    top: 0;
+    left: 601px;
+    width: 207px;
+    height: 88px;
+    position: absolute;
+    color: #000;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: "libreFranklin Medium";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 0.47px;
+    padding-left: 60px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 26px;
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/group.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__input-duration {
+    position: relative;
+    width: 213px;
+    height: 88px;
+    border: none;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  &__label-duration {
+    position: relative;
+    top: 0;
+    left: 810px;
+    width: 213px;
+    height: 88px;
+    position: absolute;
+    color: #000;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    font-family: "libreFranklin Medium";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 0.47px;
+    padding-left: 60px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 26px;
+      width: 26px;
+      height: 20px;
+      background-image: url("../img/002-bed.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  &__btn {
+    position: relative;
+    width: 89px;
+    height: 89px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    background-color: #16c2b8;
+    padding: 0;
+    z-index: 3;
+  }
+  &__btn-arrow {
+    position: relative;
+    width: 40px;
+    height: 1px;
+    background-color: $white;
+    margin: auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 26px;
+      width: 15px;
+      height: 1px;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 26px;
+      width: 15px;
+      height: 1px;
+      background-color: $white;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .form {
+    width: 600px;
+    height: 88px;
+    margin-left: -300px;
+    &__input-where {
+      width: 200px;
+    }
+    &__label-where {
+      width: 199px;
+    }
+    &__input-when {
+      width: 200px;
+    }
+    &__label-when {
+      width: 198px;
+      left: 201px;
+    }
+    &__input-duration {
+      width: 111px;
+    }
+    &__label-duration {
+      width: 110px;
+      left: 401px;
+      padding-left: 40px;
+      &::before {
+        left: 7px;
+      }
+    }
+  }
+}
+
+@media (min-width: 671px) {
+  .form {
+    height: 88px;
+  }
+}
+
+@media (max-width: 670px) {
+  .form {
+    width: 335px;
+    height: auto;
+    margin-bottom: 47px;
+    flex-direction: column;
+    margin-left: -167.5px;
+    margin-bottom: 47px;
+    &__input-where {
+      width: 335px;
+      height: 60px;
+      border-right: none;
+      border-bottom: solid 0.3px #8ca0bf;
+    }
+    &__label-where {
+      width: 335px;
+      height: 59px;
+      left: 0;
+      &::before {
+        top: 17px;
+        left: 17px;
+      }
+    }
+
+    &__input-when {
+      width: 335px;
+      height: 60px;
+      border-right: none;
+      border-bottom: solid 0.3px #8ca0bf;
+      display: none;
+    }
+    &__label-when {
+      width: 335px;
+      height: 59px;
+      top: 60px;
+      left: 0;
+      display: none;
+      &::before {
+        top: 17px;
+        left: 17px;
+      }
+    }
+    &__input-duration {
+      width: 335px;
+      height: 60px;
+      border-right: none;
+      border-bottom: solid 0.3px #8ca0bf;
+      display: none;
+    }
+    &__label-duration {
+      width: 335px;
+      height: 59px;
+      padding-left: 40px;
+      display: none;
+      left: 0;
+      top: 120px;
+      padding-left: 60px;
+      &::before {
+        top: 17px;
+        left: 17px;
+      }
+    }
+    &__btn {
+      width: 335px;
+      height: 60px;
+      display: none;
+    }
+  }
+}
+
+.form__input-where:focus + label {
+  display: none;
+}
+.form__input-when:focus + label {
+  display: none;
+}
+.form__input-duration:focus + label {
+  display: none;
+}
